@@ -76,13 +76,15 @@
         let x = Math.floor(Math.random() * event.pageX + 200) 
         let y = Math.floor(Math.random() * event.pageY + 200)
         // 알아 볼 것은 Math.floor가 어떤 메서드인지 알아볼 것과 작성한 이유 알아보기.
+        let xString = x.toString()
+        let yString = y.toString()
+
+        jum.style.left=xString+"px"
+        jum.style.top=yString+"px"
+
       })
 
-      let xString = x.toString()
-      let yString = y.toString()
-
-      jum.style.left=xString+"px"
-      jum.style.top=yString+"px"
+      
 
       //슬렉에 있는 내용을 적어보고 해보려 했으나 결과가 나오지 않음.= x값이 정의되지 않음.
 
