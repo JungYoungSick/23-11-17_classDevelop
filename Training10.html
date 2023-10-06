@@ -42,7 +42,9 @@
   </style>
 </head>
 <body>
-  <div id="root"></div>
+  <div id="root">
+    <div id="jum"></div>
+  </div>
   <div>
     <h1></h1>
     <div class="grayBox">
@@ -70,7 +72,17 @@
     jum.style.backgroundColor = "black"
     jum.style.position = "absolute"
 
+    jum.addEventListener('click', function(event) {
+        let x = Math.floor(Math.random() * event.pageX + 200) 
+        let y = Math.floor(Math.random() * event.pageY + 200)
+        // 알아 볼 것은 Math.floor가 어떤 메서드인지 알아볼 것과 작성한 이유 알아보기.
+      })
 
+      let xString = x.toString()
+      let yString = y.toString()
+
+      jum.style.left=xString+"px"
+      jum.style.top=yString+"px"
 
 
 
