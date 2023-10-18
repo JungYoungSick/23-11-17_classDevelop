@@ -16,3 +16,4 @@ function developPractics(array, name, startText, endText) {
     }
   }
 }
+developPractics(studentList, "정영식", "이름은", "이다.")
