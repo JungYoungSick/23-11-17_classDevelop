@@ -9,19 +9,20 @@ const server = http.createServer((req, res) => {
 
   console.log(req.url ,req.method);
   if(req.url === '/' && req.method === 'GET') {
-    fs.readFile('./Develop_Training_11/app_T_11_1.html','utf-8',(err,data) => {
+    fs.readFile('./Develop_Training_11/app_T_11_1.html','utf8',(err,data) => {
       if(err) {
         serverErrerLog();
       }
-      res.writeHead(200,{'Content-Type':'text/html'});
+      res.writeHead(200,{'Content-Type':'text/html; charset=utf-8'});
       res.end(data);
     });
-  }else if(req.url ==='app-T_11_1.CSS' && req.method === 'GET') {
-    fs.readFile('./Develop_Training_11/app-T_11_1.CSS','utf-8',(err,data) => {
+  }else if(req.url ==='/app_T_11_1.CSS' && req.method === 'GET') {
+    fs.readFile('./Develop_Training_11/app_T_11_1.CSS','utf8',(err,data) => {
       if(err) {
         serverErrerLog();
       }
-      res.writeHead(200, {'Content-Type':'text/css'});
+      
+      res.writeHead(200, {'Content-Type':'text/css; charset=utf-8'});
       res.end(data)
     })
   }
