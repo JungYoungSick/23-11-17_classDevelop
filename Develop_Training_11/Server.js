@@ -22,6 +22,9 @@ const server = http.createServer((req, res) => {
         serverErrerLog();
       }
       res.writeHead(205, {'content-type':'text/css'});
+      res.end(data)
     })
   }
 })
+const port = 3000;
+server.listen(port, () => {});
