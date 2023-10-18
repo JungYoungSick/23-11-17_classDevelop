@@ -13,3 +13,15 @@ dictionnary_example = {
     "꼬부기"
   ]
 }
+
+print(dictionnary_example["adress"])
+print(
+  "나는 {}의 {}에 있는 {}강의실에서 {}에서 훈련중인 {}입니다."
+  .format(
+    dictionnary_example["address"],
+    dictionnary_example["academyName"],
+    dictionnary_example["ckassroomNumber"],
+    dictionnary_example["lectureName"],
+    dictionnary_example["studentList"][0]
+  )
+)
