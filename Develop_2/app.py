@@ -5,7 +5,8 @@ dictionnary_example = {
   "location":"둔산점",
   "address": "대전광역시 서구 대덕대로 182 오라클 빌딩 3층",
   "telNumber": "042-476-2111",
-  "classroomNumber": "it's different",
+  "classroomNumber": 305,
+  "lectureName": "it's different",
   "studentList": [
     "피카츄",
     "라이츄",
@@ -14,13 +15,13 @@ dictionnary_example = {
   ]
 }
 
-print(dictionnary_example["adress"])
+print(dictionnary_example["address"])
 print(
   "나는 {}의 {}에 있는 {}강의실에서 {}에서 훈련중인 {}입니다."
   .format(
     dictionnary_example["address"],
     dictionnary_example["academyName"],
-    dictionnary_example["ckassroomNumber"],
+    dictionnary_example["classroomNumber"],
     dictionnary_example["lectureName"],
     dictionnary_example["studentList"][0]
   )
