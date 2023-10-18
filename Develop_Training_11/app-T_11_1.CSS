@@ -11,7 +11,16 @@
 #root>div{
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
+
 }
+#root>div:nth-child(1) div {
+  width: 380px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 input{
   width: 300px;
   height: 35px;
@@ -19,6 +28,7 @@ input{
   border-radius: 10px;
   border-style: none;
   margin: 10px;
+
 }
 label{
   font-family: inter;
@@ -28,13 +38,13 @@ label{
   color: #b6b6b6;
 }
 button{
-  width: 150px;
-  height: 35px;
-  background-color: #ff6666;
   
   font-family: inter;
   font-weight: 400;
   font-size: 24px;
   line-height: 29.05px;
-
+  background-color: #ff6666;
+  border-radius: 10px;
+  border-style: none;
+  color: white;
 }
