@@ -9,15 +9,15 @@ const server = http.createServer((req, res) => {
 
   console.log(req.url ,req.method);
   if(req.url === '/' && req.method === 'GET') {
-    fs.readFile('./Develop_Training_11/app_T_11_1.html','utf8',(err,data) => {
+    fs.readFile('./Develop_Training_11/app_T_11_1.html',(err,data) => {
       if(err) {
         serverErrerLog();
       }
-      res.writeHead(200,{'Content-Type':'text/html; charset=utf-8'});
+      res.writeHead(200,"UTF-8",{'Content-Type':"text/html; charset=utf-8"})
       res.end(data);
     });
   }else if(req.url ==='/app_T_11_1.CSS' && req.method === 'GET') {
-    fs.readFile('./Develop_Training_11/app_T_11_1.CSS','utf8',(err,data) => {
+    fs.readFile('./Develop_Training_11/app_T_11_1.CSS',(err,data) => {
       if(err) {
         serverErrerLog();
       }
@@ -27,6 +27,6 @@ const server = http.createServer((req, res) => {
     })
   }
 })
-const port = 8080;
+const port = 3000;
 server.listen(port, () => {});
 
