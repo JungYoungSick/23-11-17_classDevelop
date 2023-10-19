@@ -30,7 +30,7 @@ const server = http.createServer((req, res) => {
       if(err) {
         serverErrerLog();
       }
-      res.writeHead(200, {'content-type':'text/js'});
+      res.writeHead(200, {'content-type':'application/js'});
       res.end(data)
     });
   } else {
