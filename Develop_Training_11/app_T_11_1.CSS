@@ -37,8 +37,8 @@ label{
   line-height: 29.05px;
   color: #b6b6b6;
 }
-button{
-  
+.button{
+  width: 150px;
   font-family: inter;
   font-weight: 400;
   font-size: 24px;
@@ -47,4 +47,5 @@ button{
   border-radius: 10px;
   border-style: none;
   color: white;
+  margin-left: 70px;
 }
