@@ -2,12 +2,9 @@ const ID = document.getElementById('id')
 const PW = document.getElementById('pw')
 const PW2 = document.getElementById('pw2')
 const EMAIL = document.getElementById('Email')
-
-
-
-
+let languageTpye = /^[A-Za-z0-9]{4,10}$/;
 // id는 소문자와 대문자가 포함되지 않으면 동작하지 않게 처리
-
+if(ID = languageTpye.ID.value) {"조건이 맞지 않습니다"}
 
 
 
