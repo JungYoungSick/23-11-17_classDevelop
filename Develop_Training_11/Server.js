@@ -24,7 +24,15 @@ const server = http.createServer((req, res) => {
       }
       res.writeHead(200, {'Content-Type':'text/css; charset=utf-8'});
       res.end(data)
-    })
+    });
+  }else if (req.url === '/app_T_11_1.js' && req.method === 'GET') {
+    fs.readFile('./app_T_11_1.js', (err,data) => {
+      if(err) {
+        serverErrerLog();
+      }
+      res.writeHead(200, {'content-type':'text/js'});
+      res.end(data)
+    });
   } else {
     res.writeHead(404);
     res.end('Not found')
