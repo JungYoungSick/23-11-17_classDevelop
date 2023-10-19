@@ -13,7 +13,7 @@ const server = http.createServer((req, res) => {
       if(err) {
         serverErrerLog();
       }
-      res.writeHead(200, {'Content-Type':"text/html; charset=utf-8"})
+      res.writeHead(200, {'Content-Type':'text/html', 'charset':'utf-8'});
       res.end(data);
     });
   }
@@ -22,7 +22,7 @@ const server = http.createServer((req, res) => {
       if(err) {
         serverErrerLog();
       }
-      res.writeHead(200, {'Content-Type':'text/css; charset=utf-8'});
+      res.writeHead(200, {'Content-Type':'text/css;', 'charset':'utf-8'});
       res.end(data)
     });
   }else if (req.url === '/app_T_11_1.js' && req.method === 'GET') {
@@ -30,7 +30,7 @@ const server = http.createServer((req, res) => {
       if(err) {
         serverErrerLog();
       }
-      res.writeHead(200, {'content-type':'application/js'});
+      res.writeHead(200, {'content-type':'application/javascript', 'charset':'utf-8'});
       res.end(data)
     });
   } else {
