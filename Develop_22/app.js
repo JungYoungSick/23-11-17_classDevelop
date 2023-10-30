@@ -9,7 +9,7 @@ class SimpleServer {
       res.writeHead(200, {'Content-Type' : 'text/plain'});
       res.end('생성자 함수로 가동된 서버입니다.')
     });
-    server.removeListener(this.port, () => {
+    server.listen(this.port, () => {
       console.log(`http://localhost:${this.port}`);
     });
   }
