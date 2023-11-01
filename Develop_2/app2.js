@@ -29,4 +29,4 @@ var obj = {
 // Q. 객체 데이터에 접근해서 문장을 완성하세요.
 // example > 나는 어디주소의 어떤 학원에 있는 어디 강의에 훈련중인 누구입니다.
 
-console.log("텍스트")
+console.log("나는" + obj.address + "에" + obj.academyName + "에 있는" + obj.classroomNumber + "호에서 강의를 들으며 훈련중인" + obj.studentList[13] + "입니다.")
