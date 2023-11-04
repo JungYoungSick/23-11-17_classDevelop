@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root">
+      <h1 id="primpt-text"></h1>
+      <label for="color-value">type want color</label>
+      <input type="text" name="color-value" id="color-value" />
+    </div>
+    <script>
+      let promptText = document.getElementById("prompt-text");
+      let colorValue = document.getElementById("color-value");
+      colorValue.addEventListener("change", function () {
+        promptText.textContent = colorValue.value;
+      });
+    </script>
+  </body>
+</html>
