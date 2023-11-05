@@ -20,12 +20,12 @@ const server = http.createServer(function (require, response) {
   }
   if (require.url === "/") {
     let doc = docMaker("메인페이지", "/sub", "서브페이지로 이동!");
-    response.writeHead(200, { "content-Type": "text/html" });
+    response.writeHead(200, { "Content-Type": "text/html" });
     response.end(doc);
   }
   if (require.url === "/sub") {
     let doc = docMaker("서브페이지", "/sub", "메인페이지로 이동!");
-    response.writeHead(200, { "content-Type": "text/html" });
+    response.writeHead(200, { "Content-Type": "text/html" });
     response.end(doc);
   }
 })
