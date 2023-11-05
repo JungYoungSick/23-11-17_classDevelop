@@ -6,3 +6,4 @@ const pokemonOne = {
 };
 
 pokemonOne.pokemonOne();
+
